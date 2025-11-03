@@ -18,9 +18,9 @@ A modern Electron application template built with React, TypeScript, Vite, and s
 
 ### UI & Styling
 - **🎨 shadcn/ui** - Beautiful, accessible UI components built on Radix UI primitives
-- **🎭 Tailwind CSS 3.4** - Utility-first CSS framework with custom design system
+- **🎭 Tailwind CSS 4.1.16** - Latest utility-first CSS framework with enhanced performance
 - **🌙 Theme Support** - Light, dark, and system theme modes with persistence
-- **� Responsiove Design** - Mobile-first approach with Tailwind breakpoints
+- **📱 Responsive Design** - Mobile-first approach with Tailwind breakpoints
 - **🎯 Lucide React 0.552** - Beautiful, customizable SVG icons
 
 ### State Management & Forms
@@ -36,6 +36,7 @@ A modern Electron application template built with React, TypeScript, Vite, and s
 
 ### Development Tools
 - **🔧 Electron Forge 7.10** - Complete build and packaging toolchain
+- **⚡ React Compiler** - Automatic React optimizations with babel-plugin-react-compiler
 - **📦 Modern Tooling** - ESLint 8.57, PostCSS 8.5, Autoprefixer 10.4
 - **🎯 Developer Experience** - Hot reload, TypeScript path mapping, and comprehensive linting
 - **🚀 GitHub Actions** - Automated CI/CD with cross-platform builds
@@ -115,6 +116,17 @@ This template includes a complete set of shadcn/ui components and modern librari
 - **Tailwind Merge** - Intelligent class merging for dynamic styles
 - **Class Variance Authority** - Type-safe component variant system
 
+## ⚡ React Compiler
+
+This template includes the React Compiler for automatic performance optimizations:
+
+- **Automatic Memoization** - Eliminates the need for manual `useMemo`, `useCallback`, and `React.memo`
+- **Smart Re-rendering** - Reduces unnecessary component re-renders automatically
+- **Zero Configuration** - Works out of the box with your existing React code
+- **Better Performance** - Optimizes your components without code changes
+
+The React Compiler is configured in `vite.renderer.config.ts` and will automatically optimize your React components during the build process.
+
 ## 🌙 Theme System
 
 The template includes a complete theme system with:
@@ -169,12 +181,15 @@ npx shadcn@latest add [component-name]
 
 ## 🔧 Configuration
 
-### Tailwind CSS
+### Tailwind CSS v4
 
-Customize your design system in `tailwind.config.js`:
+Customize your design system in `tailwind.config.ts`:
 
-```js
-module.exports = {
+```ts
+import type { Config } from 'tailwindcss'
+
+export default {
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -182,8 +197,10 @@ module.exports = {
       }
     }
   }
-}
+} satisfies Config
 ```
+
+**Note**: This template uses Tailwind CSS v4.1.16 with the new configuration format and enhanced performance features.
 
 ### Vite Configuration
 
