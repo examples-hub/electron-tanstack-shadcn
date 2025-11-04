@@ -207,28 +207,6 @@ npx shadcn@latest add [component-name]
 2. Use TypeScript and follow the existing patterns
 3. Import and use in your pages
 
-## 🔧 Configuration
-
-### Tailwind CSS v4
-
-Customize your design system in `index.css`:
-
-```ts
-import type { Config } from 'tailwindcss'
-
-export default {
-  content: ['./src/**/*.{ts,tsx}'],
-  theme: {
-    extend: {
-      colors: {
-        // Add your custom colors
-      }
-    }
-  }
-} satisfies Config
-```
-
-**Note**: This template uses Tailwind CSS v4.1.16 with the new configuration format and enhanced performance features.
 
 ### Vite Configuration
 
