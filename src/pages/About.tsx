@@ -29,7 +29,7 @@ type ContactForm = z.infer<typeof contactSchema>;
 
 // Mock API function for React Query demo
 const fetchAppStats = async () => {
-  await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API delay
+  await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate API delay
   return {
     version: '1.0.0',
     buildDate: new Date().toLocaleDateString(),
@@ -65,7 +65,7 @@ export default function About() {
 
   const onSubmit = async (data: ContactForm) => {
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log('Form submitted:', data);
     setFormSubmitted(true);
     reset();

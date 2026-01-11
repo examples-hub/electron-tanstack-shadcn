@@ -9,7 +9,6 @@ import { router } from './utils/routes';
 
 const queryClient = new QueryClient();
 
-
 function App() {
   return (
     <QueryClientProvider client={queryClient}>

@@ -1,6 +1,7 @@
-# Electron + shadcn/ui Template
+# electron-tanstack-shadcn
 
-A modern Electron application template built with React, TypeScript, Vite, and shadcn/ui components. This template provides a solid foundation for building beautiful desktop applications with a complete UI component system and theme support.
+A modern Electron application template built with React, TypeScript, Vite, and shadcn/ui components. 
+This template provides a solid foundation for building beautiful desktop applications with a complete UI component system and theme support.
 
 ## 📸 Screenshot
 

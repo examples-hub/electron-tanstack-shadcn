@@ -15,13 +15,15 @@ const createWindow = () => {
     frame: process.platform === 'darwin',
     titleBarStyle: 'hidden', // hides title bar but keeps shadow and window controls space
     autoHideMenuBar: true, // hides menu bar (like VS Code)
-    ...(process.platform !== 'darwin' ? {
-      titleBarOverlay: {
-        color: '#020817',
-        symbolColor: '#f8fafc',
-        height: 30,
-      },
-    } : {}),
+    ...(process.platform !== 'darwin'
+      ? {
+          titleBarOverlay: {
+            color: '#020817',
+            symbolColor: '#f8fafc',
+            height: 30,
+          },
+        }
+      : {}),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
@@ -34,7 +36,7 @@ const createWindow = () => {
     mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
   } else {
     mainWindow.loadFile(
-      path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`)
+      path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`),
     );
   }
 

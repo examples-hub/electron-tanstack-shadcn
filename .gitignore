@@ -1,3 +1,8 @@
+# hidden
+-bak/
+*.bak
+
+
 # Dependencies
 node_modules/
 npm-debug.log*
@@ -13,6 +18,7 @@ out/
 # Environment variables
 .env
 .env.local
+.env.private
 .env.development.local
 .env.test.local
 .env.production.local
