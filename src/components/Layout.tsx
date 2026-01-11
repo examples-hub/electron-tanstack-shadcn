@@ -13,11 +13,11 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="h-screen bg-background flex flex-col">
-      <TitleBar />
+      {/* <TitleBar /> */}
       <nav className="border-b border-border bg-card flex-shrink-0">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            <h1 className="text-lg font-semibold">Electron + shadcn/ui</h1>
+            <h1 className="text-lg font-semibold">tanstack + shadcn/ui</h1>
             <div className="flex items-center gap-2">
               <Button
                 variant={location.pathname === '/' ? 'default' : 'ghost'}
