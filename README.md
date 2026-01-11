@@ -12,12 +12,14 @@ This template provides a solid foundation for building beautiful desktop applica
 ## ✨ Features
 
 ### Core Framework
+
 - **⚡ Electron 39.0** - Cross-platform desktop app framework
 - **⚛️ React 19.2** - Modern React with latest features and concurrent rendering
 - **🔷 TypeScript 5.9** - Type-safe development with advanced type inference
 - **🚀 Rolldown Vite 7.1.20** - Next-generation Rust-based bundler replacing traditional Vite for enhanced performance
 
 ### UI & Styling
+
 - **🎨 shadcn/ui** - Complete component library with 50+ components built on Radix UI primitives
 - **🎭 Tailwind CSS 4.1.16** - Latest utility-first CSS framework with enhanced performance
 - **🌙 Advanced Theme System** - Light, dark, and system theme modes with intelligent toggle and persistence
@@ -26,6 +28,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - **🎨 CSS Variables** - Dynamic theming with CSS custom properties
 
 ### Complete UI Component Set
+
 - **Layout Components**: Button, Card, Dialog, Sheet, Tabs, Accordion, Sidebar
 - **Form Controls**: Input, Label, Select, Checkbox, Radio Group, Switch, Slider, Textarea
 - **Navigation**: Navigation Menu, Breadcrumb, Pagination, Command Palette
@@ -35,6 +38,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - **Advanced Components**: Carousel, Resizable Panels, Input OTP, Date Picker
 
 ### State Management & Forms
+
 - **🔄 TanStack Query 5.90** - Powerful data fetching, caching, and synchronization
 - **📝 React Hook Form 7.66** - Performant forms with minimal re-renders
 - **✅ Zod 4.1** - TypeScript-first schema validation with runtime type checking
@@ -42,6 +46,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - **🔗 Hookform Resolvers** - Seamless integration between forms and validation
 
 ### Routing & Navigation
+
 - **🧭 TanStack Router 1.134** - Type-safe routing with automatic code generation
 - **📍 File-based Routes** - Intuitive file-system based routing with nested layouts
 - **🔗 100% Type-safe Navigation** - Full TypeScript inference for routes, params, and search
@@ -50,6 +55,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - **⚡ Code Splitting** - Automatic route-based code splitting and lazy loading
 
 ### Theme & Accessibility
+
 - **🌙 Multi-Theme Support** - Light, dark, and system preference detection
 - **🔄 Theme Toggle** - Intuitive cycling through theme modes with visual indicators
 - **♿ Accessibility First** - WCAG compliant components with proper ARIA attributes
@@ -57,6 +63,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - **📱 Responsive Breakpoints** - Mobile, tablet, and desktop optimized layouts
 
 ### Development Tools
+
 - **🔧 Electron Forge 7.10** - Complete build and packaging toolchain
 - **⚡ React Compiler** - Automatic React optimizations with babel-plugin-react-compiler
 - **📦 Modern Tooling** - ESLint 9.39 with flat config, Rolldown Vite bundler
@@ -66,6 +73,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - **🔍 Path Aliases** - Clean imports with @ prefix for better code organization
 
 ### Testing & Quality Assurance
+
 - **🧪 Vitest 4.0** - Fast unit testing with native ES modules support
 - **🎭 Playwright 1.56** - End-to-end testing across multiple browsers
 - **💅 Prettier 3.6** - Consistent code formatting with automatic styling
@@ -83,24 +91,31 @@ This template provides a solid foundation for building beautiful desktop applica
 ### Installation
 
 1. **Clone this template**
-   ```bash
-   git clone https://github.com/rohitsoni007/electron-shadcn.git my-electron-app
+   
+
+```bash
+   git clone https://github.com/examples-hub/electron-tanstack-shadcn.git my-electron-app
    cd my-electron-app
    ```
 
 2. **Install dependencies**
-   ```bash
+   
+
+```bash
    npm install
    ```
 
 3. **Start development**
-   ```bash
+   
+
+```bash
    npm start
    ```
 
 ## 📦 Available Scripts
 
 ### Development
+
 - `npm start` - Start the Electron app in development mode
 - `npm run lint` - Run ESLint with modern flat config
 - `npm run type-check` - Run TypeScript type checking
@@ -110,6 +125,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - `npm run routes:watch` - Watch and auto-generate routes during development
 
 ### Testing
+
 - `npm run test` - Run unit tests with Vitest
 - `npm run test:watch` - Run unit tests in watch mode
 - `npm run test:ui` - Run unit tests with UI interface
@@ -119,6 +135,7 @@ This template provides a solid foundation for building beautiful desktop applica
 - `npm run test:e2e:headed` - Run E2E tests with visible browser
 
 ### Build & Distribution
+
 - `npm run build` - Build the application
 - `npm run package` - Package the app for distribution
 - `npm run make` - Create distributable packages
@@ -167,6 +184,7 @@ Configuration Files:
 This template includes a complete set of shadcn/ui components and modern libraries:
 
 ### Complete shadcn/ui Component Library (50+ Components)
+
 - **Layout & Structure**: Button, Card, Dialog, Sheet, Tabs, Accordion, Sidebar, Resizable Panels
 - **Form Controls**: Input, Textarea, Label, Select, Checkbox, Radio Group, Switch, Slider, Input OTP
 - **Navigation**: Navigation Menu, Breadcrumb, Pagination, Command Palette, Menubar
@@ -177,6 +195,7 @@ This template includes a complete set of shadcn/ui components and modern librari
 - **Form Integration**: Form wrapper components with React Hook Form integration
 
 ### Integrated Libraries & Tools
+
 - **React Hook Form 7.66** - Form state management with minimal re-renders and validation
 - **Zod 4.1** - Runtime type validation and schema parsing with TypeScript inference
 - **TanStack Query 5.90** - Server state management, caching, and background updates
@@ -193,7 +212,7 @@ This template includes a complete set of shadcn/ui components and modern librari
 
 This template includes the React Compiler for automatic performance optimizations:
 
-- **Automatic Memoization** - Eliminates the need for manual `useMemo`, `useCallback`, and `React.memo`
+- **Automatic Memoization** - Eliminates the need for manual `useMemo`,     `useCallback`, and `React.memo`
 - **Smart Re-rendering** - Reduces unnecessary component re-renders automatically
 - **Zero Configuration** - Works out of the box with your existing React code
 - **Better Performance** - Optimizes your components without code changes
@@ -233,6 +252,7 @@ The template uses TanStack Router for type-safe, file-based routing:
 ### Adding New Routes
 
 1. **Create a route file** in `src/routes/`:
+
 ```tsx
 // src/routes/my-page.tsx
 import { createFileRoute } from '@tanstack/react-router';
@@ -244,6 +264,7 @@ export const Route = createFileRoute('/my-page')({
 ```
 
 2. **Generate the route tree**:
+
 ```bash
 npm run routes:generate
 ```
@@ -340,10 +361,9 @@ npx shadcn@latest add [component-name]
 2. Use TypeScript and follow the existing patterns
 3. Import and use in your pages
 
-
 ### Vite Configuration
 
-Modify build settings in `vite.renderer.config.mjs`:
+Modify build settings in `vite.renderer.config.mjs` :
 
 ```ts
 export default defineConfig({
@@ -374,6 +394,7 @@ This will create platform-specific distributables in the `out/` directory.
 This template includes GitHub Actions workflows for automated building and releasing:
 
 #### Build Workflow
+
 - **Triggers**: Push to main, pull requests, and tags
 - **Platforms**: Windows, macOS, and Linux
 - **Outputs**: Executable files for all platforms
@@ -381,6 +402,7 @@ This template includes GitHub Actions workflows for automated building and relea
 - **Note**: Regular pushes to main only build and test - no release is created
 
 #### Release Workflow
+
 - **Triggers**: Manual trigger from GitHub Actions interface or git tags
 - **Features**: 
   - Cross-platform builds
@@ -397,11 +419,14 @@ The workflow supports manual release creation through GitHub Actions interface:
    - Select **"Build and Release"** workflow
    - Click **"Run workflow"** button
    - Choose options:
+
      - ✅ **Create a release**: Check this box
-     - 📝 **Release tag**: Enter custom tag (e.g., `v1.0.0`) or leave empty for auto-generated
+     - 📝 **Release tag**: Enter custom tag (e.g., `v1.0.0` ) or leave empty for auto-generated
 
 2. **Alternative: Git tag releases**:
-   ```bash
+   
+
+```bash
    # Create and push a version tag for automatic release
    git tag v1.0.0
    git push origin v1.0.0
@@ -468,10 +493,4 @@ For production releases, you can set up code signing by adding these secrets to 
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-**Happy coding! 🚀**
-
-Built with ❤️ using Electron + shadcn/ui
+[MIT](LICENSE)
